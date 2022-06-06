@@ -1,7 +1,15 @@
+/*Police d'écriture*/
+
 *{
     font-family: "Roboto", "sans-serif";
     box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+}
+
+/*NAVBAR*/
 
 nav{
     display: flex;
@@ -10,9 +18,12 @@ nav{
     flex-wrap: wrap;
 }
 
+/*Logo Booki*/
+
 .logo{
     margin-right: auto;
     padding: 0 2rem;
+    
 }
 
 nav a{
@@ -35,6 +46,8 @@ nav a:hover{
     color: blue;
 }
 
+/*Partie mobiles*/
+
 @media (max-width: 800px){
     .sub-nav{
         flex-basis: 100%;
@@ -53,6 +66,12 @@ nav a:hover{
 
     .logo{
         margin-right: auto;
-        padding: 0 2rem;
+        margin-left: auto;
     }
+}
+
+/*BODY*/
+
+.search{
+    padding: 0 2rem;
 }
