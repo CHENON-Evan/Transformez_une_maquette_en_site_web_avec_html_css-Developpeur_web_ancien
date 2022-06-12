@@ -23,6 +23,7 @@ nav{
 .logo{
     margin-right: auto;
     padding: 0 2rem;
+    height: 2.813rem;
     cursor: pointer;
 }
 
@@ -86,6 +87,7 @@ nav a:hover{
 .search p{
     margin-bottom: 1rem;
 }
+
 /*SEARCH-FORM*/
 
 .search-form{
@@ -110,6 +112,10 @@ nav a:hover{
     color: black;
 }
 
+.fas.fa-search{
+    display: none;
+}
+
 .search-form button{
     border: none;
     color: white;
@@ -118,4 +124,91 @@ nav a:hover{
     font-size: 1.2rem;
     padding: 0 1.5rem;
     cursor: pointer;
+}
+
+
+@media (max-width: 800px){
+    .search-form .search-text{
+        display: none;
+    }
+
+    .fas.fa-search{
+        display: inline;
+    }
+
+}
+
+/*FILTERS*/
+
+.filters{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filters h1{
+    margin-bottom: 0;
+}
+
+.filter{
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter .fas{
+    color: blue;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin: -2px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter a{
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.filter:hover{
+    background-color: var(--lighterblue);
+    transform: scale(1.02);
+}
+
+/*SEARCH RESULTS*/
+
+.search-results{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-results .fas{
+    color: blue;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*APARTEMENTS LIST*/
+.apartments-list{ 
+    display: flex;
+    gap: 1rem;
+}
+
+.apartments-list div{
+    border: 1px solid red;
+    background-color: #f2f2f2;
 }
